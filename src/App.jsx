@@ -12,7 +12,7 @@ function App() {
         <div className="sections">
           <section
             id="main"
-            className="min-h-screen flex items-center justify-center bg-gray-100"
+            className="min-h-screen flex items-center justify-center bg-custom-light-blue"
           >
             <Main />
           </section>

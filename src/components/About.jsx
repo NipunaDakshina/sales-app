@@ -3,7 +3,7 @@ import BuyImage from "../assets/xmm-img1.png";
 
 export const About = () => {
   return (
-    <div className='mt-40 text-7xl text-green-900'>
+    <div>
       <div className="flex flex-col md:flex-row">
         {/* Image Column */}
         <div className="md:w-1/2">
