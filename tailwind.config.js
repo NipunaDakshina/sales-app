@@ -9,6 +9,8 @@ export default {
         "custom-dark-blue": "#0C0728", 
         "custom-dark-gold": "#DD6410", 
         "custom-light-gold": "#E78A14",
+        "bgcolor-01":"#1F1957",
+        "bgcolor-02":"#01011B"
       },
     },
   },

@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import { Main } from "./components/Main";
 import { About } from "./components/About";
 import { Feature } from "./components/Feature";
-import { Contact } from "./components/Contact";
+
 
 function App() {
   return (
@@ -16,25 +16,22 @@ function App() {
           >
             <Main />
           </section>
+      
           <section
             id="about"
-            className="min-h-screen flex items-center justify-center bg-gray-200"
+            className="min-h-screen flex items-center justify-center bg-gradient-to-t from-bgcolor-01 via-custom-dark-blue to-bgcolor-02"
           >
             <About />
           </section>
           <section
             id="feature"
-            className="min-h-screen flex items-center justify-center bg-gray-300"
+            className="min-h-screen flex items-center justify-center bg-gradient-to-b from-bgcolor-01 via-custom-dark-blue to-bgcolor-02"
           >
             <Feature />
           </section>
-          <section
-            id="contact"
-            className="min-h-screen flex items-center justify-center bg-gray-400"
-          >
-            <Contact />
-          </section>
-        </div>
+          
+          </div>
+       
       </div>
     </>
   );
