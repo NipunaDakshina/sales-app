@@ -1,28 +1,26 @@
 import { useState } from "react";
 import { Button } from "./Button";
+import Logo from "../assets/xmm-logo.png";
 
 
 const Navbar = () => {
-    let Links =[
-        {name:"HOME",link:"/"},
-        {name:"ABOUT",link:"/"},
-        {name:"FEATURE",link:"/"},
-        {name:"CONTACT",link:"/"},
-      ];
-      let [open,setOpen]=useState(false);
+  let Links = [
+    { name: "HOME", link: "#main" },
+    { name: "ABOUT", link: "#about" },
+    { name: "FEATURE", link: "#feature" },
+    { name: "CONTACT", link: "#contact" },
+  ];
+  let [open, setOpen] = useState(false);
 
   return (
     <>
       <div className="shadow-md w-full fixed top-0 left-0">
         <div className="md:flex items-center justify-between bg-custom-light-blue py-4 md:px-10 px-7">
           <div
-            className="font-bold text-2xl cursor-pointer flex items-center font-[helvetica] 
+            className="px-10 cursor-pointer flex items-center font-[helvetica] 
       text-gray-800"
           >
-            <span className="text-3xl text-indigo-600 mr-1 pt-2">
-              <ion-icon name="logo-ionic"></ion-icon>
-            </span>
-            Designer
+            <img src={Logo} alt="Logo"></img>
           </div>
 
           <div
@@ -48,10 +46,7 @@ const Navbar = () => {
               </li>
             ))}
             <Button>Buy Token</Button>
-    
           </ul>
-          
-
         </div>
       </div>
     </>
